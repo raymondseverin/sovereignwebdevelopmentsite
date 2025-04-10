@@ -571,15 +571,35 @@
           </div>
         </div>
         <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c7774-730b0dc8" class="contact-form w-form">
-          <form netlify id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="get" class="contact-form-content" data-netlify="true" action="/thank-you">
+          <form id="contact-form" name="Contact Form" method="POST" action="/thank-you" class="contact-form-content">
             <div class="contact-form-grid">
-              <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c7777-730b0dc8" class="fade-in-move-on-scroll"><label for="FirstName" id="contact-first-name" class="field-label contact">First Name</label><input class="input-field w-input" maxlength="256" name="FirstName" data-name="FirstName" placeholder="John" type="text" id="FirstName" required=""></div>
-              <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777b-730b0dc8" class="fade-in-move-on-scroll"><label for="LastName" id="contact-last-name" class="field-label contact">Last Name</label><input class="input-field w-input" maxlength="256" name="LastName" data-name="LastName" placeholder="Smith" type="text" id="LastName" required=""></div>
-              <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777f-730b0dc8" class="fade-in-move-on-scroll"><label for="Email-3" id="contact-email" class="field-label contact">Email</label><input class="input-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Your email" type="email" id="Email-3" required=""></div>
-              <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c7787-730b0dc8" class="fade-in-move-on-scroll"><label for="Message-3" id="contact-message" class="field-label contact">Message</label><textarea id="Message-3" name="Message" maxlength="5000" data-name="Message" placeholder="Are there any details you&#x27;d like for us to know?" class="input-field textarea-field w-input"></textarea></div>
-              <div id="w-node-f2fb423f-7673-267c-657c-64c8bca49607-730b0dc8" class="fade-in-move-on-scroll _100"><input type="submit" data-wait="Please wait..." class="button subscribe-contact-button w-button" value="Submit"></div>
+              <div class="fade-in-move-on-scroll">
+                <label for="FirstName" class="field-label contact">First Name</label>
+                <input class="input-field w-input" type="text" id="FirstName" name="FirstName" placeholder="John" maxlength="256" required>
+              </div>
+          
+              <div class="fade-in-move-on-scroll">
+                <label for="LastName" class="field-label contact">Last Name</label>
+                <input class="input-field w-input" type="text" id="LastName" name="LastName" placeholder="Smith" maxlength="256" required>
+              </div>
+          
+              <div class="fade-in-move-on-scroll">
+                <label for="Email" class="field-label contact">Email</label>
+                <input class="input-field w-input" type="email" id="Email" name="Email" placeholder="Your email" maxlength="256" required>
+              </div>
+          
+              <div class="fade-in-move-on-scroll">
+                <label for="Message" class="field-label contact">Message</label>
+                <textarea class="input-field textarea-field w-input" id="Message" name="Message" placeholder="Are there any details you’d like for us to know?" maxlength="5000"></textarea>
+              </div>
+          
+              <div class="fade-in-move-on-scroll _100">
+                <input class="button subscribe-contact-button w-button" type="submit" value="Submit">
+              </div>
             </div>
           </form>
+          
+          <!-- Optional success/error messages -->
           <div class="success-message w-form-done">
             <div>Thank you! Your submission has been received!</div>
           </div>
