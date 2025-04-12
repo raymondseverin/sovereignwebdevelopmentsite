@@ -8863,6 +8863,116 @@ blockquote {
   font-family: DM Sans, sans-serif;
 }
 
+.text-block-align-center {
+  text-align: center;
+  letter-spacing: -.03em;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.contact-content {
+  z-index: 2;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  background-color: var(--light-grey);
+  border-radius: 14px;
+  flex-direction: column;
+  padding: 40px 20px;
+  display: flex;
+  position: relative;
+}
+
+.success-message-2 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 32px;
+}
+
+.error-message-2 {
+  margin-top: 16px;
+  padding: 12px 16px;
+}
+
+.form {
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.form-input {
+  background-color: #fff;
+  border: 1px solid #f0f0f5;
+  border-radius: 10px;
+  height: auto;
+  margin-bottom: 0;
+  padding: 16px 19px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.form-input:focus {
+  border-color: #222;
+}
+
+.form-input::placeholder {
+  color: #747474;
+}
+
+.form-input.text-area {
+  min-height: 140px;
+}
+
+.form-button {
+  color: #fff;
+  text-align: center;
+  letter-spacing: -.02em;
+  background-color: #222;
+  border-radius: 10px;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+  padding: 20px 50px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.form-button:hover {
+  background-color: #e95227;
+}
+
+.form-button:active {
+  color: #fff;
+}
+
+.link-text-block {
+  color: #333;
+  transition: color .3s;
+}
+
+.link-text-block:hover, .link-text-block.w--current {
+  color: #222;
+}
+
+.text-block-18px {
+  letter-spacing: 0;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form-block {
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 0;
+}
+
+.error-text-block {
+  color: #e23939;
+}
+
 @media screen and (min-width: 1280px) {
   .hero-section.hero-about-section {
     justify-content: center;
@@ -9936,6 +10046,14 @@ blockquote {
   .akita-features-10-item-title-4 {
     font-size: 50px;
   }
+
+  .form-button {
+    transition: color .3s;
+  }
+
+  .form-button:hover {
+    background-color: #e95227;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -10543,6 +10661,14 @@ blockquote {
 
   .akita-features-10-item-title-4 {
     font-size: 45px;
+  }
+
+  .form-input {
+    font-size: 16px;
+  }
+
+  .link-text-block {
+    order: -1;
   }
 }
 
@@ -11995,6 +12121,14 @@ blockquote {
   .we-build-paragraph.main-paragraph {
     max-width: 100%;
   }
+
+  .contact-content {
+    align-items: stretch;
+  }
+
+  .heading-3 {
+    align-self: center;
+  }
 }
 
 #w-node-eb050d0c-cd20-6fbc-5d31-0eaf0a144c57-0a144c54 {
@@ -12005,17 +12139,8 @@ blockquote {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c7774-730b0dc8 {
-  align-self: center;
-}
-
-#w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777f-730b0dc8, #w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c7787-730b0dc8 {
-  grid-area: span 1 / span 2 / span 1 / span 2;
-}
-
-#w-node-f2fb423f-7673-267c-657c-64c8bca49607-730b0dc8 {
-  grid-area: span 1 / span 2 / span 1 / span 2;
-  justify-self: end;
+#w-node-_231e6bd8-87a5-8e71-2a7c-1b1fe39b589c-730b0dc8 {
+  justify-self: start;
 }
 
 #w-node-_6a027ba3-4c2c-564a-30bf-967794be9a4e-730b0dc9 {
@@ -12232,7 +12357,7 @@ blockquote {
     grid-column: span 1 / span 1;
   }
 
-  #w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c7777-730b0dc8, #w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777b-730b0dc8, #w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777f-730b0dc8, #w-node-_6a027ba3-4c2c-564a-30bf-967794be9a4e-730b0dc9, #w-node-_6a027ba3-4c2c-564a-30bf-967794be9a52-730b0dc9, #w-node-_7bbe5495-767f-cef7-f204-a8ab8c2dcf87-730b0dce, #w-node-_4b78b940-c60f-7e0e-c68d-7b8f6ab57354-730b0dce {
+  #w-node-_6a027ba3-4c2c-564a-30bf-967794be9a4e-730b0dc9, #w-node-_6a027ba3-4c2c-564a-30bf-967794be9a52-730b0dc9, #w-node-_7bbe5495-767f-cef7-f204-a8ab8c2dcf87-730b0dce, #w-node-_4b78b940-c60f-7e0e-c68d-7b8f6ab57354-730b0dce {
     grid-area: span 1 / span 2 / span 1 / span 2;
   }
 
